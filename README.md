@@ -28,7 +28,7 @@ This package provides functions for easy interaction with MondialRelay without h
 # Install
 
 ```bash
-npm install @frontboi/mondial-relay
+npm install @polarisdev/mondial-relay
 ```
 
 # ✨ Features
@@ -50,8 +50,8 @@ This package exports a React component ready to be integrated on a webpage so th
 ```tsx
 import { useState } from 'react'
 
-import { ParcelShopSelector } from '@frontboi/mondial-relay/browser'
-import { ParcelShopID, ParcelShopSelected } from '@frontboi/mondial-relay/types'
+import { ParcelShopSelector } from '@polarisdev/mondial-relay/browser'
+import { ParcelShopID, ParcelShopSelected } from '@polarisdev/mondial-relay/types'
 
 export default function MondialRelayMapSelector() {
   const [parcelShop, setParcelShop] = useState<ParcelShopSelected & ParcelShopID>()
@@ -80,8 +80,8 @@ export default function MondialRelayMapSelector() {
 Here is how to create a shipment and get an etiquette back:
 
 ```typescript
-import createShipment from '@frontboi/mondial-relay/node'
-import { CreateShipmentResponse } from '@frontboi/mondial-relay/types'
+import createShipment from '@polarisdev/mondial-relay/node'
+import { CreateShipmentResponse } from '@polarisdev/mondial-relay/types'
 
 const data: CreateShipmentResponse = await createShipment({
   // check out examples/createShipment for a complete example of
@@ -123,7 +123,7 @@ Here is an exhaustive list of the actions you can trigger using this library:
 For example:
 
 ```typescript
-import { getLabels, getTracking } from '@frontboi/mondial-relay/node'
+import { getLabels, getTracking } from '@polarisdev/mondial-relay/node'
 
 getLabels().then(labels => console.log(labels))
 getTracking().then(trackingInfos => console.log(trackingInfos.Relais_Libelle))
@@ -134,7 +134,7 @@ getTracking().then(trackingInfos => console.log(trackingInfos.Relais_Libelle))
 The package exports a little utilitary to transform an object to a XML string, This function is used to generate the XML to be sent to Mondial Relay's API.
 
 ```ts
-import { generateXML } from '@frontboi/mondial-relay/node'
+import { generateXML } from '@polarisdev/mondial-relay/node'
 
 const data = {
   // your object
@@ -157,7 +157,7 @@ The `getDeliveryPrice` function allows you to calculate your delivery price, bas
 Here is an example of how to get your delivery price (VAT included):
 
 ```typescript
-import { getDeliveryPrice } from '@frontboi/mondial-relay'
+import { getDeliveryPrice } from '@polarisdev/mondial-relay'
 
 const deliveryPrice = getDeliveryPrice(
   3000, // the weight in grams

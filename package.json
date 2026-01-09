@@ -1,7 +1,7 @@
 {
-  "name": "@frontboi/mondial-relay",
+  "name": "@polarisdev/mondial-relay",
   "version": "1.2.49",
-  "author": "Tom Blanchet <contact@tomblanchet.fr> (https://tomblanchet.fr)",
+  "author": "Polaris DEV <support@polarisdev.fr> (https://polarisdev.fr)",
   "description": "MondialRelay API web services made simple using Typescript",
   "license": "MIT",
   "main": "dist/cjs/index.js",
@@ -52,10 +52,10 @@
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/frontBOI/mondial-relay#readme",
+  "homepage": "https://github.com/fullgreengn/mondial-relay#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frontBOI/mondial-relay.git"
+    "url": "git+https://github.com/fullgreengn/mondial-relay.git"
   },
   "scripts": {
     "demo:api_v1": "npx ts-node ./examples/api_v1/index.ts",
