@@ -1,6 +1,6 @@
 {
   "name": "@polarisdev/mondial-relay",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "Polaris DEV <support@polarisdev.fr> (https://polarisdev.fr)",
   "description": "MondialRelay API web services made simple using Typescript",
   "license": "MIT",
